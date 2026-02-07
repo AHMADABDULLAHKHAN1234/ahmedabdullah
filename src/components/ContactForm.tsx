@@ -47,7 +47,7 @@ export default function ContactForm() {
                 <textarea id="message" name="message" required rows={5} placeholder="How can we work together?"></textarea>
             </div>
 
-            <button type="submit" disabled={status === "submitting" || status === "success"}>
+            <button type="submit" disabled={status === "submitting" || status === "success"} className={styles.button}>
                 {status === "submitting" ? "Sending..." : status === "success" ? "Message Sent!" : "Send Message"}
             </button>
 
