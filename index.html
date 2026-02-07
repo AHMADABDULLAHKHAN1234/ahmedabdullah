@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmad Abdullah Khan | Software Engineer</title>
+    <meta name="description" content="Professional portfolio of Ahmad Abdullah Khan, a Software Engineer specializing in Full Stack and Mobile Development.">
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Import Map for Three.js -->
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- 3D Canvas Container -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Main Overlay Content -->
+    <main class="content">
+        <!-- Header -->
+        <header class="header">
+            <h2 class="logo">AAK.</h2>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact" class="cta">Contact</a>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>
+                    Building Digital <br>
+                    <span class="gradient-text">Experiences</span>
+                </h1>
+                <p class="subtitle">
+                    I am a Software Engineer with a passion for building professional, high-performance web and mobile applications. My focus is on delivering smooth user experiences with clean, efficient code. I prioritize usability and performance over heavy effects.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="primary-btn">Get in Touch</a>
+                    <a href="https://github.com/AHMADABDULLAHKHAN1234" target="_blank" rel="noopener noreferrer" class="secondary-btn">Github</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <h3 class="section-title">About Me</h3>
+            <div class="grid">
+                <!-- Education Card -->
+                <div class="card">
+                    <h4>Education</h4>
+                    <ul class="list">
+                        <li>
+                            <strong>BS Software Engineering</strong>
+                            <span>Air University Islamabad</span>
+                            <small>Graduated</small>
+                        </li>
+                        <li>
+                            <strong>Intermediate (Medical)</strong>
+                            <span>National College Hasilpur</span>
+                            <small>Completed</small>
+                        </li>
+                        <li>
+                            <strong>Matriculation</strong>
+                            <span>Govt High School Hasilpur</span>
+                            <small>Completed</small>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Soft Skills Card -->
+                <div class="card">
+                    <h4>Soft Skills</h4>
+                    <ul class="tags">
+                        <li>Problem-solving mindset</li>
+                        <li>Team collaboration</li>
+                        <li>Clear communication</li>
+                        <li>Willingness to learn</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <h3 class="section-title">Technical Expertise</h3>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon"></div>
+                    <h4>Full Stack Web Development</h4>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"></div>
+                    <h4>Android Development</h4>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"></div>
+                    <h4>Flutter Development</h4>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3 class="section-title">Let's Work Together</h3>
+                    <p>Have a project in mind? Reach out to me via email or fill out the form.</p>
+                    <div class="contact-details">
+                        <p>📧 ahmadabdullahk251@gmail.com</p>
+                        <p>📧 ahmadabdullahk30@gmail.com</p>
+                        <p>📍 Hasilpur, District Bahawalpur</p>
+                    </div>
+                </div>
+                
+                <form id="contact-form" class="form">
+                    <div class="group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Your Name">
+                    </div>
+                    
+                    <div class="group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="your@email.com">
+                    </div>
+                    
+                    <div class="group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required rows="5" placeholder="How can we work together?"></textarea>
+                    </div>
+
+                    <button type="submit" id="submit-btn">Send Message</button>
+                    <p id="form-status" class="form-status"></p>
+                </form>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>© 2025 Ahmad Abdullah Khan. Made with Three.js</p>
+        </footer>
+    </main>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
